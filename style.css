@@ -1,0 +1,627 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+    @media screen and (max-width:768px) {
+        .navbar {
+            display: none;
+        }
+        #nav-links {
+            display: none;
+        }
+        .content {
+            width: 50%;
+            font-size: 0.2rem;
+        }
+        .content h1 {
+            font-size: 1rem;
+        }
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .calc {
+        height: 100vh;
+    }
+    
+    html {
+        font-size: 62.5%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .navbar {
+        display: flex;
+        height: 9.6rem;
+        /* position: relative; */
+    }
+    
+    #nav {
+        /* position: absolute; */
+        margin: 2.4rem 0rem 3.2rem 14rem;
+        flex: 1;
+    }
+    
+    #nav h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 4rem;
+        color: #003D2B;
+    }
+    
+    #nav-links {
+        /* position: absolute; */
+        margin: 3.2rem 10rem 3.8rem 7rem;
+    }
+    
+    .all-in {
+        font-weight: 600;
+        font-size: 2.2rem;
+        line-height: 2.7rem;
+        color: #003D2B;
+    }
+    
+    #nav-links ul {
+        list-style-type: none;
+    }
+    
+    #nav-links ul li {
+        display: inline-block;
+    }
+    
+    #nav-links ul li a {
+        text-decoration: none;
+        margin-right: 5.1rem;
+    }
+    
+    #nav-links ul li a.pro::after {
+        content: url('/images/Down_arrow.png');
+    }
+    
+    .get {
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        color: #fff;
+        background: #025F44;
+        padding: 1.4rem 3.2rem;
+        border-radius: 1.4rem;
+        margin-right: 100px;
+    }
+    
+    .content {
+        width: 100%;
+        display: flex;
+    }
+    
+    .insurance {
+        width: 50%;
+        height: 56.3rem;
+        background-color: #E4C2B1;
+        padding: 4.2rem 10rem 3.2rem 12rem;
+    }
+    /* .text {
+        padding: 9.7rem 10rem 11.4rem 14rem;
+    } */
+    
+    .text h1 {
+        font-weight: 700;
+        font-size: 5rem;
+        line-height: 6rem;
+        color: #000;
+        text-transform: uppercase;
+    }
+    
+    .image {
+        width: 50%;
+    }
+    
+    .image img {
+        width: 100%;
+    }
+    
+    .text span {
+        font-size: 1.75rem;
+        display: block;
+    }
+    
+    .text span.logo::before {
+        content: url('./images/Tick_icon-3.png');
+        margin-right: 2rem;
+    }
+    
+    .mb-34 {
+        margin-bottom: 2.4rem;
+    }
+    
+    .mb-27 {
+        margin-bottom: 2.7rem;
+    }
+    
+    .mb-42 {
+        margin-bottom: 2.8rem;
+    }
+    
+    .text a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding: 2rem 4rem;
+        background-color: #025F44;
+        border-radius: 1.4rem;
+        color: #fff;
+        margin-bottom: 4rem;
+    }
+    
+    .text .from {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        display: block;
+    }
+    
+    .icon {
+        display: flex;
+        /* height: 55vh; */
+        /* align-items: center; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 11rem 12rem;
+        background: #EFEFEF;
+    }
+    
+    .mb-40 {
+        margin-bottom: 4rem;
+    }
+    
+    .cover {
+        /* display: flex; */
+        width: 30%;
+        /* align-items: center;
+        justify-content: center; */
+    }
+    
+    .cover .img {
+        display: inline-block;
+    }
+    
+    .cover img {
+        width: 50px;
+        height: 50px;
+        margin-right: 2rem;
+    }
+    
+    .cover h2 {
+        position: relative;
+        top: -3.5rem;
+        left: 7rem;
+        font-weight: 600;
+        font-size: 2rem;
+        height: 5rem;
+    }
+    
+    .cover span {
+        font-weight: 400;
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        color: #6A6E6D;
+    }
+    /* .cover h2::before {
+        content: url('./images/Heart.png');
+    } */
+    
+    .tarif {
+        display: flex;
+        width: 100%;
+        padding: 10rem 4rem 9.5rem 13rem;
+    }
+    
+    .our-tarif {
+        width: 50%;
+    }
+    
+    .our-tarif .text {
+        width: 89%;
+    }
+    
+    .text .over {
+        border: none;
+        border-radius: none;
+        color: crimson;
+    }
+    
+    .our-tarif p {
+        font-weight: 500;
+        font-size: 1.75rem;
+        line-height: 3.5rem;
+    }
+    
+    .our-tarif .text h1 {
+        font-size: 3rem;
+    }
+    
+    .your-benefit {
+        width: 50%;
+        background: #E4C2B1;
+        padding: 1rem 11.5rem;
+    }
+    
+    .mb-7 {
+        margin-bottom: 0.7rem;
+    }
+    
+    .your-benefit .text {
+        background: #fff;
+        width: 100%;
+        padding: 1rem 2.5rem;
+    }
+    
+    .your-benefit .text h1 {
+        font-size: 3rem;
+    }
+    
+    .your-benefit .text a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .greta {
+        display: flex;
+        width: 100%;
+        background: #EFEFEF;
+    }
+    
+    .exten {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 10rem 13rem;
+    }
+    
+    .box1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    
+    .box1 img {
+        display: inline-block;
+        width: 85px;
+        height: 85px;
+        margin-right: 2.5rem;
+    }
+    
+    .sen h3 {
+        font-weight: 600;
+        font-size: 2rem;
+        margin-bottom: 0.25rem;
+    }
+    
+    .sen span {
+        font-weight: 500;
+        font-size: 1.75rem;
+        color: #6A6E6D;
+    }
+    
+    .arrow {
+        margin-left: 20rem;
+    }
+    
+    .arrow img {
+        width: 10px;
+        height: 17px;
+    }
+    
+    .yeni {
+        width: 100%;
+        padding: 10rem 1rem;
+    }
+    
+    .yazi h1 {
+        font-size: 4rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    
+    .yazi p {
+        font-size: 2rem;
+        font-weight: 500;
+        margin-bottom: 2.6rem;
+    }
+    
+    .great {
+        display: flex;
+        padding: 10rem 7.5rem;
+        width: 100%;
+    }
+    
+    .what {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .what2 {
+        display: flex;
+        /* flex-wrap: wrap; */
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 3.5rem;
+    }
+    
+    .not {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .img12 img {
+        width: 20px;
+        height: 20px;
+        margin-right: 1rem;
+        position: relative;
+        top: 1.45rem;
+    }
+    
+    .img12 h2 {
+        font-size: 2.7rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+    
+    .img12 h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 1.25rem;
+    }
+    
+    .img12 span {
+        font-size: 1.25rem;
+        font-weight: 400;
+        position: relative;
+        left: 6.6rem;
+    }
+    
+    .img12 {
+        margin-bottom: 2.5rem;
+    }
+    
+    .store {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        padding: 8.1rem 6rem;
+        background-color: #EFEFEF;
+    }
+    
+    .google {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    .google h4 {
+        font-size: 2.025rem;
+        font-weight: 500;
+        color: #025F44;
+        line-height: 2rem;
+        margin-bottom: 1.25rem;
+        margin-left: -0.5rem;
+    }
+    
+    .google img {
+        width: 20px;
+        height: 20px;
+        margin-right: 1.02rem;
+        margin-bottom: 1.25rem;
+    }
+    
+    .google a {
+        display: block;
+        font-weight: 400;
+        font-size: 2rem;
+        color: #045725;
+        margin-left: -0.2rem;
+    }
+    
+    .customer {
+        width: 100%;
+        display: flex;
+        padding: 8rem;
+    }
+    
+    .voice {
+        width: 60%;
+        padding: 1rem 4.2rem 0rem 1.25rem;
+    }
+    
+    .voice h3 {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .voice p {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 3rem;
+        color: #6A6E6D;
+    }
+    
+    .img125 {
+        width: 56%;
+        height: 31.4rem;
+        margin-top: 2.7rem;
+        padding-left: 4rem;
+        background-image: url('./images/Shape-146.png');
+    }
+    
+    .img125 img {
+        width: 35rem;
+        height: 35rem;
+        margin-top: -1.6rem;
+    }
+    
+    .john {
+        width: 31%;
+        padding: 3rem 2.5rem;
+    }
+    
+    .john h3 {
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 3.12rem;
+        margin-bottom: 2.25rem;
+    }
+    
+    .john p {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        margin-bottom: 2.756rem;
+    }
+    
+    .john img {
+        margin-bottom: 2.754rem;
+        width: 25px;
+        height: 25px;
+    }
+    
+    .john .indic {
+        width: 230px;
+        height: 85px;
+        margin-left: 7rem;
+    }
+    
+    .john .mb {
+        margin-bottom: 11rem;
+    }
+    
+    .faq {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 9rem 15rem;
+        background: #EFEFEF;
+    }
+    
+    .faq h2 {
+        font-weight: 600;
+        font-size: 4.75rem;
+        line-height: 5.21rem;
+    }
+    
+    .faq .box6 {
+        width: 63%;
+        margin: 0 auto;
+    }
+    
+    .faq .box1 .men img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .box1 .arrow12 img {
+        width: 10px;
+        height: 17px;
+    }
+    
+    .powerwait {
+        width: 100%;
+        margin: 0 auto;
+        padding: 9rem 12rem;
+        background: #E4C2B1;
+    }
+    
+    .download {
+        width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .download h2 {
+        font-weight: 600;
+        font-size: 5rem;
+        line-height: 4.25rem;
+        margin-bottom: 2.35rem;
+        text-align: center;
+    }
+    
+    .download p {
+        font-size: 1.85rem;
+        font-weight: 500;
+        line-height: 3rem;
+        margin-bottom: 2.35rem;
+    }
+    
+    .company {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 12rem;
+    }
+    
+    .company .links {
+        width: 25%;
+        padding: 0.5rem;
+    }
+    
+    .links {
+        width: 25%;
+    }
+    
+    .links ul {
+        list-style-type: none;
+    }
+    
+    .links ul li {
+        margin-bottom: 2rem
+    }
+    
+    .links ul li a {
+        text-decoration: none;
+        font-size: 1.75rem;
+        font-weight: 500;
+        line-height: 2rem;
+        color: #000;
+    }
+    
+    .links h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        margin-bottom: 3.56rem;
+    }
+    
+    .produc h3 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        line-height: 1.75rem;
+        margin-bottom: 3.56rem;
+    }
+    
+    .produc {
+        width: 25%;
+    }
+    
+    .region img {
+        width: 175px;
+        height: 95px;
+    }
+    
+    .region {
+        width: 25%;
+    }
+    
+    .metn {
+        width: 75%;
+        margin: 9rem 12.4rem;
+    }
