@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .box {
+        background-color: rgb(206, 205, 228);
+        width: 800px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 25% 25% 25% auto;
+        grid-template-rows: 200px 200px 150px;
+        grid-template-areas: "bir bir iki iki" "bir bir dord dord" "bir bir bes bes" "bir bir dord dord";
+        grid-gap: 10px;
+    }
+    
+    .box1 {
+        background-color: rgb(179, 50, 50);
+        padding: 5px;
+        border: 1px solid black;
+        grid-area: bir;
+    }
+    
+    .box2 {
+        background-color: rgb(22, 231, 196);
+        padding: 5px;
+        border: 1px solid black;
+        grid-area: iki;
+    }
+    
+    .box3 {
+        background-color: rgb(45, 4, 78);
+        padding: 5px;
+        border: 1px solid black;
+    }
+    
+    .box4 {
+        background-color: rgb(204, 184, 7);
+        padding: 5px;
+        border: 1px solid black;
+    }
+    
+    .box5 {
+        background-color: rgb(16, 231, 44);
+        padding: 5px;
+        border: 1px solid black;
+    }
+    
+    .box6 {
+        background-color: rgb(245, 97, 153);
+        padding: 5px;
+        border: 1px solid black;
+    }
+    
+    .box7 {
+        background-color: rgba(77, 66, 85, 0.452);
+        padding: 5px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+
+    <div class="box">
+
+        <div class="box1">A</div>
+        <div class="box2">B</div>
+        <div class="box3">C</div>
+        <div class="box4">D</div>
+        <div class="box5">E</div>
+        <div class="box6">F</div>
+        <div class="box7">G</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
